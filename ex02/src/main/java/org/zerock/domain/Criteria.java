@@ -5,13 +5,13 @@ import lombok.Data;
 @Data
 public class Criteria {
 
-	private int pageNum;
+	private int pageNum;     //초기값
 	private int amount;
 	
 	private String type;
 	private String keyword;
 	
-	public Criteria() {
+	public Criteria() {      //초기값
 		this(1,10);
 	}
 	

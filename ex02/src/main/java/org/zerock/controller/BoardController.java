@@ -121,6 +121,7 @@ public class BoardController {
  	 {
  	
 	 	 log.info("remove..." + bno);
+	 	 
 	 	 if (service.remove(bno)) {
 	 		 rttr.addFlashAttribute("result", "success");
 	 	 }
@@ -132,6 +133,7 @@ public class BoardController {
 	 	 
 	 	 return "redirect:/board/list";
  	 }
+     
 }
 
 

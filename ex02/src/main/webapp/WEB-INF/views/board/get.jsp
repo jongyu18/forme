@@ -73,6 +73,7 @@
 		
 		var operForm = $("#operForm"); 
 		  
+		  //수정 버튼 작동시 발생 bno값 받아서 데이터 처리
 		  $("button[data-oper='modify']").on("click", function(e){
 		    
 		    operForm.attr("action","/board/modify").submit();
@@ -80,6 +81,7 @@
 		  });
 		  
 		    
+		  //list버튼 작동시 발생 bno값 필요없음 bno삭제
 		  $("button[data-oper='list']").on("click", function(e){
 		    
 		    operForm.find("#bno").remove();

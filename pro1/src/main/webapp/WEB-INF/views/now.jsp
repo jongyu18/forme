@@ -5,8 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="${path}/resources/css/now.css" rel="stylesheet"/>   
 
+<link href="${pageContext.request.contextPath}/resources/css/now.css" rel="stylesheet" type="text/css">
+
+ 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
     
@@ -25,9 +27,9 @@
 
   
 </head>
-<body>
-<main>
 
+  <body>
+    
     <!-- 카테고리 -->
   <section class=" text-center " style="background-color: #fff2cc">
     <div class="row py-lg-5">
@@ -46,9 +48,8 @@
     </div>
   </section>
    <!-- 카테고리end -->
-   
-   
-    <!-- 검색창 -->
+
+   <!-- 검색창 -->
    <nav class="navbar bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -62,14 +63,15 @@
     </div>
   </nav>
   <!-- 검색창 -->
-   
+
+
 
    <br>
 
    <!-- 게시물 -->
    <!--인기 강습-->
    <div class="row popular">
-    <div class="container popular">
+    <div class="container-fluid">
       <div class="row p_row">
       
         <div class="col-md-2"></div>
@@ -77,8 +79,72 @@
         <div class="col-md-8">
         
           <!-- loacation: 나중에 이동할 상세페이지 넣을 것임 -->
+          <!--1행-->
+          <div class = "p_article" onclick="">
+              <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
+              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
+              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
+              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
+              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
+          </div>
           
-          <div class = "p_article" onclick="location.href='http://google.com'">
+          <div class = "p_article" onclick="">
+              <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
+              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
+              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
+              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
+              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
+          </div>
+          
+          <div class = "p_article" onclick="">
+              <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
+              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
+              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
+              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
+              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
+          </div>
+          
+          <div class = "p_article" onclick="">
+              <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
+              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
+              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
+              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
+              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
+          </div>
+          
+          <div class = "p_article" onclick="">
+              <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
+              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
+              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
+              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
+              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
+          </div>
+          
+          <div class = "p_article" onclick="">
+              <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
+              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
+              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
+              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
+              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
+          </div>
+          
+          <div class = "p_article" onclick="">
+              <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
+              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
+              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
+              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
+              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
+          </div>
+          
+          <div class = "p_article" onclick="">
+              <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
+              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
+              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
+              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
+              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
+          </div>
+          
+          <div class = "p_article" onclick="">
               <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
               <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
               <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
@@ -86,107 +152,38 @@
               <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
           </div>
 
-          <div class = "p_article" onclick="location.href='http://google.com'">
-              <div class = "p_class"><a href ="#"><img src="../resources/imges/test1.jpg" alt="..." class="p_img"></a></div>
-              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
-              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
-              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
-              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
-          </div>
+        
 
-          <div class = "p_article" onclick="location.href='http://google.com'">
-              <div class = "p_class"><a href ="#"><img src="../resources/imges/test4.jpg" alt="..." class="p_img"></a></div>
-              <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
-              <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
-              <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
-              <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
-          </div>
+          <!--글쓰기 버튼-->
+          <span class ="btn-span"><button type="button" class="btn-write">글쓰기</button></span>
+        </div> <!--col-md-8-->
 
-        </div> 
+
+
+        <!--페이징-->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+        
 
         <div class="col-md-2"></div>
       
       </div> <!-- p_row end-->
 
 
-      <div class="row p_row">
-      
-        <div class="col-md-2"></div>
-        
-        <div class="col-md-8">
-        
-          <!-- loacation: 나중에 이동할 상세페이지 넣을 것임 -->
-          
-          <div class = "p_article" onclick="location.href='http://google.com'">
-            <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
-            <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
-            <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
-            <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
-            <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
-        </div>
 
-        <div class = "p_article" onclick="location.href='http://google.com'">
-            <div class = "p_class"><a href ="#"><img src="../resources/imges/test1.jpg" alt="..." class="p_img"></a></div>
-            <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
-            <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
-            <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
-            <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
-        </div>
-
-        <div class = "p_article" onclick="location.href='http://google.com'">
-            <div class = "p_class"><a href ="#"><img src="../resources/imges/test4.jpg" alt="..." class="p_img"></a></div>
-            <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
-            <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
-            <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
-            <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
-        </div>
-
-        </div> 
-
-        <div class="col-md-2"></div>
-      
-      </div> <!-- p_row end-->
-
-
-      <div class="row p_row">
-      
-        <div class="col-md-2"></div>
-        
-        <div class="col-md-8">
-        
-          <!-- loacation: 나중에 이동할 상세페이지 넣을 것임 -->
-          
-          <div class = "p_article" onclick="location.href='http://google.com'">
-            <div class = "p_class"><a href ="#"><img src="../resources/imges/test.jpg" alt="..." class="p_img"></a></div>
-            <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
-            <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
-            <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
-            <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
-        </div>
-
-        <div class = "p_article" onclick="location.href='http://google.com'">
-            <div class = "p_class"><a href ="#"><img src="../resources/imges/test1.jpg" alt="..." class="p_img"></a></div>
-            <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
-            <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
-            <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
-            <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
-        </div>
-
-        <div class = "p_article" onclick="location.href='http://google.com'">
-            <div class = "p_class"><a href ="#"><img src="../resources/imges/test4.jpg" alt="..." class="p_img"></a></div>
-            <a href ="#"><p class = "p_small"><b>BNO</b></p></a>
-            <a href ="#"><p class = "p_small"><b>TITEL</b></p></a>
-            <a href ="#"><p class ="p_price"><i class="bi bi-basket2">&nbsp</i><b>30,000원~</b></p></a>
-            <a href ="#"><p class ="p_star"><i class="bi bi-star-fill"></i>4.8</a> | 200개의 리뷰</p>
-        </div>
-
-        </div> 
-
-        <div class="col-md-2"></div>
-      
-      </div> <!-- p_row end-->
-
-      <div class="row"></div>
 
 
     </div>
@@ -195,56 +192,13 @@
 
   
 
-</main>
-
-<!-- 글쓰기 -->
-
-<br><br><br>
-<div class="container text-anchor">
-   
-    <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-dark">글쓰기</button>
-      </div>
-      
-    </div>
-  
-  </div>
-  <br><br>
-  <!-- 글쓰기end -->
-
-
-  <!-- 페이징 -->
-  <br><br><br>
-  <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center">
-      <li class="page-item disabled">
-        <a class="page-link">Previous</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">4</a></li>
-      <li class="page-item"><a class="page-link" href="#">5</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">Next</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- 페이징end -->
-
-  <br><br><br>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
       
-</body>
+  </body>
 </html>
-
-
-
-
 
 
 

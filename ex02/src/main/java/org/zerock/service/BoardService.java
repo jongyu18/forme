@@ -7,7 +7,7 @@ import org.zerock.domain.Criteria;
 
 public interface BoardService {  //DAO역할  오버라이딩
 	
-	
+	  
 	  public void register(BoardVO board);
 	  
 	

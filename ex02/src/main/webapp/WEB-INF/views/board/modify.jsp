@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+
 <%@include file="../includes/header.jsp"%>
 
 <div class="row">
@@ -20,11 +21,13 @@
       <!-- /.panel-heading -->
       <div class="panel-body">
       
+      
 	  <form role="form" action="/board/modify" method="post">
 	  	<input type='hidden' name='pageNum' value='<c:out value="${cri.pageNum}"/>'>
   		<input type='hidden' name='amount' value='<c:out value="${cri.amount}"/>'>
   		<input type='hidden' name='type' value='<c:out value="${ cri.type }"/>'> 
 		<input type='hidden' name='keyword' value='<c:out value="${ cri.keyword }"/>'>
+		
 	  	<div class="form-group">
 		  <label>Bno</label> 
 		  <input class="form-control" name='bno' 
@@ -76,7 +79,7 @@
 <!-- /.row -->
 	  
 <script>
-	$(function(){	  
+	$(document).ready(function(){	  
 		  var formObj = $("form");
 		  
 		  $("button").on("click",function(e){
@@ -85,9 +88,11 @@
 			  var operation = $(this).data("oper")
 			  console.log(operation);
 			  
+			  //삭제버튼
 			  if(operation == 'remove'){
 				  formObj.attr("action","/board/remove");
 				  
+		      //리스트 버튼
 			  }else if(operation == 'list'){
 				  formObj.attr("action", "/board/list").attr("method","get");
 				  var pageNumTag = $("input[name='pageNum']").clone();
